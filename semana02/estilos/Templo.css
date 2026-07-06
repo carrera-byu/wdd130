@@ -1,0 +1,130 @@
+/* Reset básico para remover margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Inclui bordas e padding no cálculo da largura/altura */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fonte padrão */
+    background-color: #eee;
+    /* Cor de fundo cinza claro */
+    color: #333;
+    /* Cor do texto em cinza escuro */
+}
+
+/* Cabeçalho e rodapé */
+header,
+footer {
+    background-color: #333;
+    /* Fundo escuro */
+    color: #fff;
+    /* Texto branco */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding: 20px;
+    /* Espaçamento interno */
+}
+
+/* Texto dentro do cabeçalho */
+header p {
+    font-size: 1.2rem;
+    /* Tamanho da fonte maior */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    /* Centraliza o título */
+    margin: 15px 0;
+    /* Espaçamento acima e abaixo */
+    font-size: 1.8rem;
+    /* Tamanho da fonte */
+}
+
+/* Rodapé com espaçamento superior */
+footer {
+    margin-top: 20px;
+}
+
+/* Área principal do conteúdo */
+main {
+    margin: 40px auto;
+    /* Centraliza horizontalmente */
+    width: 500px;
+    /* Largura fixa */
+}
+
+/* Container para imagens */
+picture {
+    display: block;
+    margin-bottom: 20px;
+    /* Espaço abaixo da imagem */
+}
+
+/* Estilo das imagens */
+img {
+    width: 500px;
+    /* Largura fixa */
+    height: auto;
+    /* Altura proporcional */
+    display: block;
+    margin: 0 auto;
+    /* Centraliza a imagem */
+    border: 10px solid #fff;
+    /* Borda branca */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    border-radius: 4px;
+    /* Bordas levemente arredondadas */
+}
+
+/* Seções de conteúdo */
+section {
+    background-color: #d9d9d9;
+    /* Fundo cinza médio */
+    margin: 0 0 30px 0;
+    /* Espaço abaixo da seção */
+    padding: 30px;
+    /* Espaçamento interno */
+    line-height: 1.5rem;
+    /* Altura da linha para melhor leitura */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+/* Títulos dentro das seções */
+section h2 {
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
+    border-bottom: 1px solid #333;
+    /* Linha separadora */
+    padding-bottom: 10px;
+    /* Espaço entre texto e linha */
+}
+
+/* Parágrafos e listas dentro das seções */
+section p,
+section li {
+    margin-bottom: 10px;
+    /* Espaço entre elementos */
+}
+
+/* Links */
+a {
+    color: #333;
+    /* Cor do link */
+    font-weight: bold;
+    /* Negrito */
+    text-decoration: none;
+    /* Remove sublinhado padrão */
+}
+
+/* Links ao passar o mouse */
+a:hover {
+    text-decoration: underline;
+    /* Sublinha ao passar o mouse */
+}
