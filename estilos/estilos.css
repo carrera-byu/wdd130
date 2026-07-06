@@ -4,7 +4,7 @@ nav {
 }
 nav a {
     color: white;
-    display: bolck;
+    display: block;
     padding: 20px;
 }
 h1
@@ -20,4 +20,5 @@ img {
 }
 p {
     padding: 10px;
+    width: 800px;
 }
