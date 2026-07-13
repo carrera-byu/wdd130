@@ -1,42 +1,79 @@
-:root {
-    --cor-primaria: steelblue;
-    --cor-texto: #222;
-    --cor-fundo: #fff;
-    --cor-branca: white;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-    --padding-padrao: 10px;
-}
-
+/* SELETOR UNIVERSAL */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--fonte-padrao);
-    line-height: 1.5;
-    color: var(--cor-texto);
-    background: var(--cor-fundo);
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
+/* NAV AZUL EM COLUNA IGUAL A FOTO */
 nav {
-    background-color: var(--cor-primaria);
+  background-color: steelblue;
+  padding: 1rem;
 }
 
 nav a {
-    color: var(--cor-branca);
-    padding: var(--padding-padrao);
-    display: block;
+  color: white;
+  display: block; /* fica um embaixo do outro */
+  padding: 0.5rem 0;
+  text-decoration: underline;
 }
 
 h1 {
-    color: var(--cor-primaria);
+  color: steelblue;
+  padding: 1rem;
 }
 
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* IMAGEM FLUTUANDO A DIREITA */
 main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--cor-primaria);
+  width: 200px;
+  height: auto;
+  float: right;
+  margin: 0 0 1rem 1rem;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+aside {
+  width: 20em;
+  margin: 1rem;
+  text-align: center;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+
+/* SELETORES DE CLASSE */
+ /* Seletores de Classe */
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #000;
+  clear: both;
 }
