@@ -1,0 +1,132 @@
+/* VARIÁVEIS DE CORES E FONTES */
+:root {
+  --cor-primaria: #055a05; /* verde do footer */
+  --cor-secundaria: #f4a261; /* amarelo/laranja da caixa */
+  --cor-destaque1: #264653; /* azul escuro do texto */
+  --cor-destaque2: #ffffff; /* branco */
+  --fonte-titulo: "Times New Roman", "Georgia", serif;
+  --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* RESET DO BOX-MODEL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-body);
+  color: var(--cor-destaque1);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* HEADER EM COLUNA */
+header {
+    background-color: var(--cor-destaque2);
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column; /* Menu em coluna */
+    gap: 5px;
+}
+
+header nav a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* TÍTULOS */
+h1, h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-destaque1);
+  text-align: center;
+  padding: 16px;
+}
+
+p, section {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* HERO COM SOBREPOSIÇÃO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--cor-destaque2);
+  background-color: rgba(0,0,0,0.5); /* faixa preta transparente */
+  padding: 16px;
+}
+
+.hero article {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    right: 40px;
+    background-color: var(--cor-secundaria); /* caixa amarela */
+    padding: 15px;
+    opacity: 0.9;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 15px;
+  border: 1px solid #000;
+}
+
+/* FOOTER VERDE COM ÍCONES EM COLUNA */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column; /* Ícones um embaixo do outro */
+    align-items: center;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 50px; /* Ícones grandes */
+}
