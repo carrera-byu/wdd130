@@ -51,7 +51,8 @@ div {
 }
 
 .columns-3 {
-    grid-column: span 3;}
+    grid-column: span 3;
+}
 
 .tres {
     margin: .25rem;

@@ -1,59 +1,100 @@
 * {
     margin: 0;
+    /* remove margens padrão */
     padding: 0;
+    /* remove espaçamentos padrão */
     box-sizing: border-box;
+    /* garante cálculo correto de largura/altura */
 }
 
 body {
     margin: 1rem;
+    /* margem externa do body */
     font-family: monospace;
+    /* fonte monoespaçada */
     font-size: 1.2rem;
+    /* tamanho da fonte */
 }
 
 div {
     margin: 1rem;
-    border: 1px dashed;
+    /* espaço externo entre divs */
+    border: 1px dashed #000;
+    /* borda tracejada preta */
     padding: 1rem;
+    /* espaço interno */
 }
 
 .one {
     width: 200px;
+    /* largura fixa para os exercícios 1 */
     height: 200px;
+    /* altura fixa para os exercícios 1 */
 }
 
 .flex {
     background-color: #aba;
-    /* escreva declaracoes aqui */
-
+    /* fundo para exercício com Flex */
+    display: flex;
+    /* ativa layout flex */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    align-items: center;
+    /* centraliza verticalmente */
 }
 
 .grid {
     background-color: #abb;
-    /* escreva declaracoes aqui */
-
+    /* fundo para exercício com Grid */
+    display: grid;
+    /* ativa layout grid */
+    place-items: center;
+    /* centraliza conteúdo no grid */
 }
 
 .container2 {
-    /* escreva declaracoes aqui */
-
+    display: flex;
+    /* ativa flexbox para exercício 2 */
+    flex-wrap: wrap;
+    /* permite quebra de linha se necessário */
+    justify-content: space-evenly;
+    /* distribui itens igualmente */
 }
 
 .dois {
     background-color: #ace;
+    /* fundo dos itens do exercício 2 */
+    width: 100px;
+    /* largura fixa dos itens */
     height: 100px;
+    /* altura fixa dos itens */
+    display: flex;
+    /* flex para centralizar texto */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    align-items: center;
+    /* centraliza verticalmente */
 }
 
 .container3 {
-    /* escreva declaracoes aqui */
-
+    display: grid;
+    /* ativa grid para exercício 3 */
+    grid-template-columns: repeat(3, 1fr);
+    /* cria 3 colunas iguais */
+    gap: 0.5rem;
+    /* espaço entre as células */
 }
 
-.colunas-3 {
-    /* escreva declaracoes aqui */
-
+.columns-3 {
+    grid-column: span 3;
+    /* título ocupa todas as 3 colunas */
 }
 
 .tres {
-    margin: .25rem;
+    margin: 0;
+    /* remove margem padrão */
     background-color: #abd;
+    /* fundo das células */
+    padding: 0.8rem;
+    /* espaço interno das células */
 }
