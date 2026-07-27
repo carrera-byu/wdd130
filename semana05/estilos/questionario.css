@@ -1,0 +1,74 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* CAIXA DO FORMULÁRIO - FUNDO AZUL CLARO */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #dbe7f3; /* Azul claro da imagem */
+  padding: 2rem;
+  border-radius: 5px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.item-questionario {
+  display: grid;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+label code {
+  background: #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #4a76a8; /* Azul do botão da imagem */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a5f8a;
+}
