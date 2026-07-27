@@ -1,0 +1,112 @@
+/* RESET UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.2em;
+  color: #333;
+  background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  width: 650px;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.5em;
+  color: navy;
+  text-align: center;
+}
+
+/* FORM - GRID */
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+  gap: 1rem;
+}
+
+/* FONTES DOS CAMPOS */
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* ITENS DO FORM - GRID */
+.item-formulario {
+  display: grid;
+  align-items: center;
+}
+
+/* COLUNA 1: Label grande, campo pequeno */
+.coluna1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+/* COLUNA 2: Label pequeno, campo grande */
+.coluna2 {
+  grid-template-columns: 1fr 2fr;
+  margin: 0.5rem 0;
+}
+
+/* LABELS */
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* CAMPOS */
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* CHECKBOX MAIOR */
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+  justify-self: start; /* Alinha o checkbox à esquerda na coluna */
+}
+
+/* BOTÃO */
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* FOOTER */
+footer {
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Pesquisa</title>
+  <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pesquisa de Usuário</h1>
+  </header>
+
+  <main>
+    <form>
+      
+      <!-- 1. Nome Completo - coluna2 -->
+      <div class="item-formulario coluna2">
+        <label for="nome-completo">Nome Completo:</label>
+        <input type="text" id="nome-completo" name="nome-completo" required>
+      </div>
+
+      <!-- 2. Email - coluna2 -->
+      <div class="item-formulario coluna2">
+        <label for="emaildousuario">E-mail:</label>
+        <input type="email" id="emaildousuario" name="emaildousuario" required>
+      </div>
+
+      <!-- 3. Navegador - coluna1 -->
+      <div class="item-formulario coluna1">
+        <label for="navegador">Qual é o seu navegador favorito?</label>
+        <select id="navegador" name="navegador">
+          <option value="chrome">Chrome</option>
+          <option value="safari">Safari</option>
+          <option value="edge">Edge</option>
+          <option value="brave">Brave</option>
+          <option value="firefox">Firefox</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+      <!-- 4. Pet - coluna1 -->
+      <div class="item-formulario coluna1">
+        <label for="pet">Você tem um bichinho de estimação em casa?</label>
+        <input type="checkbox" id="pet" name="pet">
+      </div>
+
+      <!-- 5. Lugares - coluna2 -->
+      <div class="item-formulario coluna2">
+        <label for="feedback">Liste os lugares onde você morou:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Ex: São Paulo Brasil, Lisboa Portugal, Nova York EUA"></textarea>
+      </div>
+
+      <!-- Botão -->
+      <button type="submit">Enviar Pesquisa</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Curso WDD130</p>
+  </footer>
+
+</body>
+</html>
