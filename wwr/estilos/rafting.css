@@ -1,18 +1,16 @@
-/* VARIÁVEIS DE CORES E FONTES */
+/* ================================
+   VARIÁVEIS DE CORES E FONTES
+   ================================ */
 :root {
-  --cor-primaria: #055a05;
-  /* verde do footer */
-  --cor-secundaria: #f4a261;
-  /* amarelo/laranja da caixa */
-  --cor-destaque1: #264653;
-  /* azul escuro do texto */
-  --cor-destaque2: #ffffff;
-  /* branco */
+  --cor-primaria: #055a05; 
+  --cor-secundaria: #f4a261; 
+  --cor-destaque1: #264653; 
+  --cor-destaque2: #ffffff; 
   --fonte-titulo: "Times New Roman", "Georgia", serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-/* RESET DO BOX-MODEL */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -22,185 +20,192 @@
 body {
   font-family: var(--fonte-body);
   color: var(--cor-destaque1);
+  background-color: var(--cor-destaque2);
 }
 
-/* 1. HEADER COM GRID */
+/* HEADER */
 header {
   width: 840px;
   margin: 0 auto;
-  background-color: var(--cor-destaque2);
+  background-color: #d0d8f0;
   padding: 20px;
   display: grid;
   grid-template-columns: 120px 1fr;
-  /* Logo | Nav */
   align-items: center;
   gap: 1rem;
+  border: 2px solid #4a5a8a;
 }
 
 header img {
   width: 100px;
+  background: #e0e0e0;
+  padding: 10px;
 }
 
-/* 2. NAV COM FLEX */
 header nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 0;
 }
 
 header nav a {
-  color: var(--cor-destaque1);
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   font-weight: 700;
-  padding: 0.5rem;
+  padding: 8px 16px;
+  border: 2px solid #4a5a8a;
+  background: #fff;
+  margin-left: -2px;
 }
-
 header nav a:hover {
-  color: var(--cor-primaria);
-  text-decoration: underline;
+  background-color: #c0c0c0;
 }
 
-/* TÍTULOS */
-h1,
-h2 {
+/* TITULOS */
+h1, h2 {
   font-family: var(--fonte-titulo);
-  color: var(--cor-destaque1);
+  color: #000;
   text-align: center;
   padding: 16px;
 }
 
-p,
-section {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* HERO COM SOBREPOSIÇÃO */
-.hero {
-  position: relative;
+/* CONTATO - IGUAL WIREFRAME */
+.empresa-info, .equipe {
   width: 840px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.dados-empresa {
   text-align: center;
-  color: var(--cor-destaque2);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 16px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 16px;
+}
+.dados-empresa p {
+  margin: 5px 0;
 }
 
-.hero article {
-  position: absolute;
-  top: 80px;
-  left: 40px;
-  right: 40px;
-  background-color: var(--cor-secundaria);
-  padding: 15px;
-  opacity: 0.9;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 15px;
-  border: 1px solid #000;
-}
-
-/* 3. SEÇÃO HISTÓRIA COM GRID 3 COLUNAS */
-.historia {
+.contato-container {
   display: grid;
-  grid-template-columns: 1fr 250px 1fr;
-  /* Texto | Imagem | Texto */
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: center;
-  text-align: justify;
-  width: 840px;
-  margin: 2rem auto;
+  align-items: start;
 }
 
-.historia h2 {
-  grid-column: 1 / 4;
-  /* Ocupa as 3 colunas */
-}
-
-.historia img {
+/* ESTILO DO IFRAME NO CSS */
+.mapa iframe {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  border: none;
 }
 
-/* 4. SEÇÃO AVENTURAS COM FLEX 5 IMAGENS */
-.aventuras {
-  width: 840px;
-  margin: 2rem auto;
-}
-
-.aventuras h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.galeria {
+/* FORMULARIO */
+.form-contato form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 1rem;
 }
 
-figure {
-  flex: 1 1 18%;
-  /* 5 figuras na linha */
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+  padding: 8px;
+  border: 2px solid #4a5a8a;
+  border-radius: 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+fieldset {
+  border: 2px solid #4a5a8a;
+  padding: 10px;
+}
+fieldset legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+fieldset label {
+  display: block;
+  margin: 8px 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+fieldset input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+button {
+  background-color: #e0e0e0;
+  color: #000;
+  border: 2px solid #4a5a8a;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  background-color: #c0c0c0;
+}
+
+/* EQUIPE */
+.galeria-equipe {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
   text-align: center;
 }
-
-figure img {
-  width: 100%;
-  height: 120px;
+.galeria-equipe figure {
+  flex: 1;
+}
+.galeria-equipe img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #4a5a8a;
   object-fit: cover;
-  /* Corta pra ficar do mesmo tamanho */
-  border-radius: 5px;
+  border-radius: 0;
+}
+.galeria-equipe figcaption {
+  margin-top: 8px;
+  font-weight: bold;
 }
 
-figcaption {
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-  font-weight: 600;
-}
-
-/* 5. FOOTER FLEX */
+/* FOOTER */
 footer {
   width: 840px;
-  margin: 0 auto;
-  background-color: var(--cor-primaria);
-  color: var(--cor-destaque2);
+  margin: 2rem auto 0 auto;
+  background-color: #d0d8f0;
+  color: #000;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  /* Texto esquerda, ícones direita */
   align-items: center;
+  border-top: 2px solid #4a5a8a;
 }
-
-footer p {
-  margin: 0;
-}
-
 .redes-sociais {
   display: flex;
-  flex-direction: row;
-  /* Ícones na horizontal */
   gap: 15px;
 }
-
 .redes-sociais img {
   width: 35px;
 }

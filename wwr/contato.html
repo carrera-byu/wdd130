@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Fale conosco da V.C Rafting. Envie dúvidas sobre reservas, sugestões ou entre em contato. Veja nosso endereço e mapa.">
+    <meta name="author" content="Victor José">
+    <title>Fale Conosco - V.C Rafting</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo V.C Rafting">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: INFO + MAPA + FORM -->
+        <section class="empresa-info">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <div class="dados-empresa">
+                <p>123 Rua Principal do Rio</p>
+                <p>Foz do Iguaçu, Paraná</p>
+                <p>+55 45 99999-9999</p>
+                <p>info@correiras.com</p>
+            </div>
+
+            <div class="contato-container">
+                <!-- MAPA ESQUERDA -->
+                <div class="mapa">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6533!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAyLjAiUyA0NsKwMzknMTEuOSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+                        width="100%" 
+                        height="300" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- FORMULARIO DIREITA -->
+                <div class="form-contato">
+                    <form>
+                        <!-- NOME -->
+                        <div class="form-item">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="form-item">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+                        </div>
+
+                        <!-- FINALIDADE COM RADIO -->
+                        <fieldset>
+                            <legend>Propósito da Mensagem</legend>
+                            
+                            <label>
+                                <input type="radio" name="proposito" value="consulta" checked> 
+                                Consulta Geral
+                            </label>
+
+                            <label>
+                                <input type="radio" name="proposito" value="reserva"> 
+                                Pergunta sobre Reserva
+                            </label>
+
+                            <label>
+                                <input type="radio" name="proposito" value="sugestao"> 
+                                Sugestão de Site
+                            </label>
+                        </fieldset>
+
+                        <!-- MENSAGEM -->
+                        <div class="form-item">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui" required></textarea>
+                        </div>
+
+                        <!-- CHECKBOX NEWSLETTER -->
+                        <div class="form-item checkbox">
+                            <label>
+                                <input type="checkbox" name="newsletter"> 
+                                Quero receber a newsletter mensal
+                            </label>
+                        </div>
+
+                        <!-- BOTAO SUBMIT -->
+                        <button type="submit">Entrar em Contato!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: EQUIPE COM CARGOS -->
+        <section class="equipe">
+            <h2>Conheça Nossa Equipe</h2>
+            <div class="galeria-equipe">
+                <figure>
+                    <img src="imagens/funcionario1.jpg" alt="Carlos - Guia de Rafting">
+                    <figcaption>Carlos - Guia de Rafting</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionario2.jpg" alt="Ana - Atendimento ao Cliente">
+                    <figcaption>Ana - Atendimento ao Cliente</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionario3.jpg" alt="Pedro - Segurança">
+                    <figcaption>Pedro - Segurança</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 V.C Rafting. Victor José</p>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
