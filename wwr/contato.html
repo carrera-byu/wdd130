@@ -28,8 +28,8 @@
             <h1>Companhia de Rafting VC em Corredeiras</h1>
             <div class="dados-empresa">
                 <p>RaftingRafting@correiras.com</p>
-                <p>Av Paulisat</p>
-                <p>São Paulo</p>
+                <p>Av Paulista</p>
+                <p>São Paulo.SP</p>
                 <p>+55 45 99999-9999</p>
                 <p>RaftingRafting@correiras.com</p>
             </div>
@@ -63,29 +63,15 @@
 
                         <!-- FINALIDADE COM RADIO -->
                         <fieldset>
-                            <legend>Propósito da Mensagem</legend>
-                            
-                            <label>
-                                <input type="radio" name="proposito" value="consulta" checked> 
-                                Consulta Geral
-                            </label>
+  <legend>Motivo do contato</legend>
+  <label for="duvida"><input type="radio" id="duvida" name="motivo" value="duvida"> Dúvida</label>
+  <label for="reserva"><input type="radio" id="reserva" name="motivo" value="reserva"> Reserva</label>
+  <label for="sugestao"><input type="radio" id="sugestao" name="motivo" value="sugestao"> Sugestão</label>
+</fieldset>
 
-                            <label>
-                                <input type="radio" name="proposito" value="reserva"> 
-                                Pergunta sobre Reserva
-                            </label>
-
-                            <label>
-                                <input type="radio" name="proposito" value="sugestao"> 
-                                Sugestão de Site
-                            </label>
-                        </fieldset>
-
-                        <!-- MENSAGEM -->
-                        <div class="form-item">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui" required></textarea>
-                        </div>
+<div class="checkbox">
+  <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Desejo receber novidades</label>
+</div>
 
                         <!-- CHECKBOX NEWSLETTER -->
                         <div class="form-item checkbox">
