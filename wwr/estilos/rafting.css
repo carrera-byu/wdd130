@@ -283,3 +283,33 @@ footer {
   width: 35px;
   height: 35px;
 }
+/* TRANSIÇÃO SUAVE */
+.aventura-grid img { 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.aventura-grid img:hover {
+    transform: scale(1.08); /* Aumenta 8% */
+    box-shadow: 0 6px 20px rgba(57, 110, 148, 0.6); /* Sombra azul */
+    cursor: pointer;
+}
+/* EFEITO HOVER NAS IMAGENS DOS PASSEIOS */
+.passeios-grid div {
+  transition: transform 0.3s ease; /* Faz o card inteiro subir */
+}
+
+.passeios-grid div:hover {
+  transform: translateY(-5px); /* Sobe o card quando passa o mouse */
+}
+
+.passeios-grid img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  cursor: pointer;
+}
+
+/* EFEITO AO PASSAR O MOUSE NA IMAGEM */
+.passeios-grid img:hover {
+    transform: scale(1.05); /* Aumenta a imagem */
+    box-shadow: 0 8px 25px rgba(57, 110, 148, 0.7); /* Sombra azul */
+}
