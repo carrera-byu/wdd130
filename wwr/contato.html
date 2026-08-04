@@ -1,122 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="Fale conosco da V.C Rafting. Envie dúvidas sobre reservas, sugestões ou entre em contato. Veja nosso endereço e mapa.">
-    <meta name="author" content="Victor José">
-    <title>Fale Conosco - V.C Rafting</title>
-    <link rel="stylesheet" href="estilos/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descrição da página para SEO -->
+  <meta name="description" content="Entre em contato com a V.C Rafting. Tire suas dúvidas, faça reservas e conheça nossa equipe.">
+  <!-- Autor da página -->
+  <meta name="author" content="Victor José">
+  <title>Fale Conosco | V.C Rafting</title>
+  <!-- Arquivo CSS principal -->
+  <link rel="stylesheet" href="estilos/rafting.css">
 </head>
-
 <body>
-    <header>
-        <img src="imagens/logo.png" alt="Logo V.C Rafting">
-        <nav>
-            <a href="index.html">Página Inicial</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="passeios.html">Passeios</a>
-            <a href="contato.html">Fale Conosco</a>
-        </nav>
-    </header>
 
-    <main>
-        <!-- SEÇÃO 1: INFO + MAPA + FORM -->
-        <section class="empresa-info">
-            <h1>Companhia de Rafting VC em Corredeiras</h1>
-            <div class="dados-empresa">
-                <p>RaftingRafting@correiras.com</p>
-                <p>Av Paulista</p>
-                <p>São Paulo.SP</p>
-                <p>+55 45 99999-9999</p>
-            </div>
+  <!-- CABEÇALHO COM LOGO E MENU -->
+  <header>
+    <img src="imagens/logo.png" alt="Logo V.C Rafting">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+  </header>
 
-            <div class="contato-container">
-                <!-- MAPA ESQUERDA -->
-                <div class="mapa">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6533!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAyLjAiUyA0NsKwMzknMTEuOSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
-                        allowfullscreen
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Mapa da V.C Rafting">
-                    </iframe>
-                </div>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <h1>V.C RAFTING</h1>
+    <!-- Dados de endereço e contato da empresa -->
+    <p class="info-empresa">
+      Av. Paulista, 1000, São Paulo - SP<br>
+      Telefone: +55 11 99999-9999<br>
+      E-mail: contato@aventurarafing.com
+    </p>
+    
+    <!-- CONTAINER COM 2 COLUNAS: MAPA E FORMULÁRIO -->
+    <div class="contato-container">
+      <!-- COLUNA 1: MAPA DO GOOGLE -->
+      <section class="mapa-box">
+        <h2>Localização</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.897123456789!2d-46.633!3d-23.550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c123456789%3A0xabcdef123456789!2sAv.%20Paulista%2C%201000%20-%20São%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr" 
+          width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
 
-                <!-- FORMULARIO DIREITA -->
-                <div class="form-contato">
-                    <form>
-                        <!-- NOME -->
-                        <div class="form-item">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
-                        </div>
+      <!-- COLUNA 2: FORMULÁRIO DE CONTATO -->
+      <form>
+        <h2>Entre em Contato</h2>
+        <!-- Campo para o nome -->
+        <div class="form-item">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <!-- Campo para o e-mail -->
+        <div class="form-item">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-                        <!-- EMAIL -->
-                        <div class="form-item">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Digite aqui" required>
-                        </div>
+        <!-- Opções de motivo do contato -->
+        <div class="form-item">
+          <p>Propósito:</p>
+          <div>
+            <input type="radio" id="consulta" name="motivo" value="consulta">
+            <label for="consulta">Consulta Geral</label>
+          </div>
+          <div>
+            <input type="radio" id="reserva" name="motivo" value="reserva">
+            <label for="reserva">Pergunta sobre Reserva</label>
+          </div>
+          <div>
+            <input type="radio" id="sugestao" name="motivo" value="sugestao">
+            <label for="sugestao">Sugestão de Site</label>
+          </div>
+        </div>
 
-                        <!-- FINALIDADE COM RADIO -->
-                        <fieldset>
-                            <legend>Motivo do contato</legend>
-                            <label for="duvida"><input type="radio" id="duvida" name="motivo" value="duvida"> Dúvida</label>
-                            <label for="reserva"><input type="radio" id="reserva" name="motivo" value="reserva"> Reserva</label>
-                            <label for="sugestao"><input type="radio" id="sugestao" name="motivo" value="sugestao"> Sugestão</label>
-                        </fieldset>
+        <!-- Campo para a mensagem -->
+        <div class="form-item">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
 
-                        <!-- TEXTAREA QUE FALTAVA -->
-                        <div class="form-item">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui" required></textarea>
-                        </div>
+        <!-- Checkbox para newsletter -->
+        <div class="form-item checkbox">
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Quero receber a newsletter mensal</label>
+        </div>
 
-                        <!-- CHECKBOX NEWSLETTER - SOLO 1 Y CON ID -->
-                        <div class="form-item checkbox">
-                            <label for="newsletter">
-                                <input type="checkbox" id="newsletter" name="newsletter"> 
-                                Quero receber a newsletter mensal
-                            </label>
-                        </div>
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
 
-                        <!-- BOTAO SUBMIT -->
-                        <button type="submit">Entrar em Contato!</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+    <!-- TÍTULO DA SEÇÃO EQUIPE -->
+   <h2>Conheça Nossa Equipe</h2>
+   <!-- GRID COM 3 FUNCIONÁRIOS -->
+<div class="equipe-grid">
+  <figure>
+    <img src="imagens/carlos-silva.jpg" alt="Carlos - Guia de Rafting">
+    <figcaption>Carlos - Guia de Rafting</figcaption>
+  </figure>
+  <figure>
+    <img src="imagens/ana-souza.jpg" alt="Ana - Atendimento ao Cliente">
+    <figcaption>Ana - Atendimento ao Cliente</figcaption>
+  </figure>
+  <figure>
+    <img src="imagens/joao-pereira.jpg" alt="João - Segurança">
+    <figcaption>João - Segurança</figcaption>
+  </figure>
+</div>
+    </section> 
+  </main>
 
-        <!-- SEÇÃO 2: EQUIPE COM CARGOS -->
-        <section class="equipe">
-            <h2>Conheça Nossa Equipe</h2>
-            <div class="galeria-equipe">
-                <figure>
-                    <img src="imagens/funcionario1.jpg" alt="Carlos - Guia de Rafting">
-                    <figcaption>Carlos - Guia de Rafting</figcaption>
-                </figure>
-                <figure>
-                    <img src="imagens/funcionario2.jpg" alt="Ana - Atendimento ao Cliente">
-                    <figcaption>Ana - Atendimento ao Cliente</figcaption>
-                </figure>
-                <figure>
-                    <img src="imagens/funcionario3.jpg" alt="Pedro - Segurança">
-                    <figcaption>Pedro - Segurança</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
+  <!-- RODAPÉ COM DIREITOS E REDES SOCIAIS -->
+  <footer>
+    <p>&copy; 2026 V.C Rafting. Victor José</p>
+    <div class="redes-sociais">
+      <a href="https://facebook.com" target="_blank">
+        <img src="imagens/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="imagens/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="imagens/instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2026 V.C Rafting. Victor José</p>
-        <nav class="redes-sociais">
-            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
-        </nav>
-    </footer>
 </body>
-
 </html>
